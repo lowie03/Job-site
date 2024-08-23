@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+} 
+
+body {
+    background: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #fff;
+    border: -1px solid black;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 2px 1px 2px #888888;
+}
+
+h1 {
+    font-size: 32px;
+    color: #000;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 10px 30px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #1eccac;
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    margin: 100px 0;
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(244, 244, 244, 0.9);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 20px;
+    /* backdrop-filter: blur(4px) saturate(180%);   This is to blur the search box */
+}
+
+.search-bar input {
+    background: transparent; 
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: #d8d5d5;
+}
+
+.search-bar button img {
+    width: 25px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background:#1eccac;
+    cursor: pointer;
+}
+
+/* .overall { */
+    /* background: red; */
+    /* display: flex;
+    margin-bottom: 10px;
+    flex-direction:row;
+    justify-content: space-evenly;
+    
+} */
+
+
+.overall {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns and 1fr is like 50% of the width*/
+    grid-gap: 10px; /* Adds spacing between the grid items */
+    margin-bottom: 10px;
+}
+
+
+/* .box1 {
+    width: 30%;
+    height: 30%;
+    background: white;
+    margin: 0 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+} */
+
+.text {
+    margin: 35px;
+    line-height: 1.7;
+ }
+
+ h2 {
+    font-size: 34px;
+    
+ }
+
+ p {
+    font-size: 17px;
+    padding: 2px;
+    font-weight: 600;
+ }
+
+ p .imp {
+    font-style: italic;
+ }
+
+ ul {
+    list-style-type: circle;
+    margin: 10px;
+ }
+
+ h3 {
+    width: 20%;
+    height: 50px;
+    color: #fff;
+    background: #1eccac;
+    /* border: 1px solid #000; */
+    border-radius: 13px;
+    padding: 6px 20px 0 15px;
+    margin-bottom: 10px;
+ }
+
+
+ .box2 {
+    width: 90%;
+    height: auto;
+    background: white;
+    margin-left: 40px;
+    border: 1px solid #888888;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 3px 2px #888888;
+ }
+
+ footer {
+    margin: 20px;
+ }
+
+ .home-sci {
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    /* float: right; */
+    margin-top: 10px;
+ }
+
+ .home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #1eccac;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #1eccac;
+    text-decoration: none;
+}
+
+.leggo {
+    word-spacing: 10px;
+}
